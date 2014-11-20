@@ -1,0 +1,10 @@
+#!/usr/bin/python
+import cgi
+import urllib2
+headers = { 'User-Agent' : 'Magic Browser' }
+def application(environ, start_response):
+  status = '200 OK'
+  response_headers = [('Content-type', 'text/html; charset=utf-8')]
+  form_data = cgi.FieldStorage(environ=environ, fp=environ['wsgi.input'])
+  start_response(status, response_headers)
+  return [urllib2.urlopen(urllib2.Request(form_data.getvalue('url'), None, headers)).read()]
