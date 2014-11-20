@@ -11,7 +11,7 @@ vagrant ssh
 cd /vagrant
 ./deploy.sh
 ```
-To deploy somehwere on the Internet (at your own risk):
+To deploy somehwere:
 ```
 Deploy an Ubuntu server somewhere you want to ricochet from.
 Ssh into it.
