@@ -3,7 +3,7 @@ http-ricochet
 
 A simple text-only proxy web service in 19 lines of Python code.
 
-To test and develop with Vagrant:
+To play with it on a VM:
 ```
     git clone http://github.com/ericwhyne/http-ricochet
     vagrant up
@@ -11,7 +11,7 @@ To test and develop with Vagrant:
     cd /vagrant
     ./deploy.sh
 ```
-To deploy:
+To deploy somehwere on the Internet (at your own risk):
 ```
     Deploy an Ubuntu server somewhere you want to ricochet from.
     Ssh into it.
