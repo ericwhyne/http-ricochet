@@ -1,7 +1,7 @@
 http-ricochet
 =============
 
-A simple text-only proxy web service in 19 lines of Python code.
+A simple proxy web service in 19 lines of Python code.
 
 To play with it on a VM:
 ```
