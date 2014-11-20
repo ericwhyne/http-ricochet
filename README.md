@@ -13,7 +13,7 @@ cd /vagrant
 ```
 To deploy somehwere:
 ```
-Deploy an Ubuntu server somewhere you want to ricochet from.
+Deploy an Ubuntu server to the location you'd like to use ricochet from.
 Ssh into it.
 git clone http://github.com/ericwhyne/http-ricochet
 ./deploy.sh
