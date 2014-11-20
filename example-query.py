@@ -15,6 +15,8 @@ headers = { 'User-Agent' : 'Its me!' }
 ricochet_server = random.choice(ricochet_servers)
 content_type = "&ct=text/html"
 url = "http://news.ycombinator.com"
+# use urllib2.quote if your url contains parameters, eg:
+# url = urllib2.quote("https://news.ycombinator.com/newest?n=31")
 query = ricochet_server + url + content_type
 
 print urllib2.urlopen(urllib2.Request(query, None, headers)).read()
