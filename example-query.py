@@ -15,7 +15,7 @@ headers = { 'User-Agent' : 'Its me!' }
 ricochet_server = random.choice(ricochet_servers)
 content_type = "&ct=text/html"
 url = "http://news.ycombinator.com"
-# use urllib2.quote if your url contains parameters, eg:
+# use urllib2.quote if your url contains parameters, the ricochet proxy will unquote before making the request
 # url = urllib2.quote("https://news.ycombinator.com/newest?n=31")
 query = ricochet_server + url + content_type
 
